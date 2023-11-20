@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0; /* Light gray background color */
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: gradient 10s linear infinite; /* Smooth gradient animation */
+}
+
+.content {
+  text-align: center;
+  color: #333; /* Dark gray text color for better visibility */
+}
+
+h1, h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background: #f0f0f0; /* Initial background color */
+  }
+  50% {
+    background: #e0e0e0; /* Midpoint background color */
+  }
+  100% {
+    background: #f0f0f0; /* Final background color */
+  }
+}
